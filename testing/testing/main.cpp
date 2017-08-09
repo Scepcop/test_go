@@ -6,11 +6,11 @@
 int main(int argc, char * argv[]) {
 	setlocale(LC_ALL, "Rus");
 	char file_name[24];
-	std::cout << "Ââåäèòå èìÿ ôàéëà: "; 
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ñ„Ð°Ð¹Ð»Ð°: "; 
 	std::cin >> file_name;
 	std::ifstream file;
 	do {
-		std::cout << "\nÔàéë íå áûë íàéäåí!\n"	<< "Ââåäèòå èìÿ ôàéëà: ";
+		std::cout << "\ÐžÐ¹, Ñ‡Ñ‚Ð¾-Ñ‚Ð¾ Ð¿Ð¾ÑˆÐ»Ð¾ Ð½Ðµ Ñ‚Ð°Ðº!ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚Ðµ Ð²Ð²Ð¾Ð´...\n"	<< "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ñ„Ð°Ð¹Ð»Ð°: ";
 		std::cin >> file_name;
 		file.open(file_name);
 		if (file.good())
